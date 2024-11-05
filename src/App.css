@@ -1,0 +1,315 @@
+/* Reset e Estilos Globais */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #009951;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  max-width: 4500px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.externa {
+  padding-bottom: -40px;
+}
+
+/* Estilos do Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #009951;
+  padding: 0;
+  height: 100px;
+  width: 100%;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+}
+
+.content-header h4 {
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.logo img {
+  height: 105px;
+  width: auto;
+}
+
+.btn-menu .menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+.btn-menu {
+  display: flex;
+  gap: 2rem;
+  font-size: 22px;
+}
+
+/* Estilos da Área Principal */
+.display {
+  flex: 1;
+  background: #fff;
+  color: #000;
+}
+
+.container {
+  flex: 1;
+  background: #fff;
+  color: #000;
+}
+
+.display-title {
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #009951;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-top: -32px;
+}
+
+.display-title h1 {
+  font-size: 2.5rem;
+  padding-top: 110px;
+  padding-bottom: 50px;
+}
+
+.display-title #sub-title {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.display-p {
+  background-color: #fff;
+}
+
+.arrow-down {
+  margin-top: 9rem;
+  width: 80px;
+  color: #000;
+}
+
+/* Ajuste para Ocupação de Largura Completa */
+.container,
+.display,
+.display-title,
+.primary-section,
+.secondary-section,
+.header,
+.img-apps-inline,
+.footer {
+  width: 100vw; /* Ocupa toda a largura da tela */
+  margin-left: calc(50% - 50vw); /* Remove margem extra nas laterais */
+  padding: 1rem 2rem; /* Padding interno para centralizar o conteúdo */
+}
+
+/* Estilos de img-apps-inline */
+.img-apps-inline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 175px;
+  gap: 8rem;
+  background: #fff;
+  color: #000;
+}
+
+.cards {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+/* Estilos das Sessões */
+.section {
+  margin: 2rem 0;
+}
+
+.section h1 {
+  color: #000;
+  font-size: 1.8rem;
+  padding-top: 1.5rem;
+}
+
+.section .content {
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.primary-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+
+.primary-section h1 {
+  align-self: center;
+  margin-bottom: 60px;
+}
+
+.secondary-section h1 {
+  align-self: center;
+  margin-bottom: 60px;
+}
+
+.secondary-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+  padding-right: 100px;
+}
+
+.secondary-section p {
+  display: flex;
+  order: 2;
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 300px;
+}
+
+.content p {
+  line-height: 30px;
+  padding-top: 90px;
+  margin: 1rem 0;
+  width: 400px;
+  height: 150px;
+}
+
+.content-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px 8px rgba(0, 0, 0, 0.3);
+  margin: 1rem;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 40px;
+  order: 1;
+}
+
+/* Estilos do Footer */
+.footer {
+  background: #E6E6E6;
+  color: #000;
+  text-align: center;
+  padding: 2rem 1rem;
+  height: 300px;
+  margin-bottom: -32px;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.content-footer h3 {
+  padding-bottom: 1.5rem;
+}
+
+.content-footer a {
+  color: #000;
+  text-decoration: none;
+  line-height: 45px;
+}
+
+.content-footer a:hover {
+  text-decoration: none;
+  color: #009951;
+}
+
+.icons p{
+  display: flex;
+  flex-direction: row;
+}
+
+.icons a {
+  padding: 6px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .btn-menu .menu a {
+    padding: 0.5rem 1rem;
+  }
+
+  .display-title {
+    padding: 3rem 1rem;
+  }
+
+  .cards {
+    height: 60px;
+    width: 60px;
+  }
+
+  .img-apps-inline,
+  .footer {
+    padding: 1rem; /* Reduz padding para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .btn-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .display-title h1 {
+    font-size: 2rem;
+  }
+
+  .display-title #sub-title {
+    font-size: 1rem;
+  }
+
+  .cards {
+    height: 50px;
+    width: 50px;
+  }
+
+  .img-apps-inline,
+  .footer {
+    padding: 0.5rem; /* Padding mínimo para melhor ajuste em telas pequenas */
+  }
+
+  .content-footer h3, .content-footer a {
+    font-size: 0.9rem;
+  }
+}
